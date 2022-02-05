@@ -1,3 +1,8 @@
 body {
   background-color: #FFFFFF;
 }
+.container {
+  width: 30%;
+  height: 30%
+  display: flex;
+}
