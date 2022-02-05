@@ -4,9 +4,11 @@ flex-wrap:no-wrap;
 }
 
 tw_card {
+height: 30%;
 width: 30%;
 }
 
 gh_card {
+height: 30%;
 width: 30%;
 } 
