@@ -1,10 +1,9 @@
 body {
-  margin: 500px;
-  padding: 100px;
+  margin: auto;
+  padding: auto;
   background-color: #FFFFFF;
 }
 
-.card {
-  width: 50%;
-  height: 50%;
+.container {
+  display: flex;
 }
