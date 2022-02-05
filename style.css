@@ -1,0 +1,12 @@
+.container {
+display:flex;
+flex-wrap:no-wrap;
+}
+
+tw_card {
+width: 30%;
+}
+
+gh_card {
+width: 30%;
+} 
