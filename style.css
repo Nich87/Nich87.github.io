@@ -1,9 +1,9 @@
 body {
-  margin: auto;
+  margin: 100px;
   background-color: #FFFFFF;
 }
 
 .card {
   width: 50%;
-  height: auto;
+  height: 50%;
 }
