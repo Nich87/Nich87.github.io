@@ -14,8 +14,16 @@ img {
     width: auto;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
 .wrap-content {
-    overflow: hidden;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px;
+    box-sizing: border-box;
 }
 
 .container {
