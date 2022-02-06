@@ -1,14 +1,13 @@
 .container {
-display:flex;
-flex-wrap:no-wrap;
+    display: flex;
+    flex-wrap: no-wrap;
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
-tw_card {
-height: 30%;
-width: 30%;
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
-
-gh_card {
-height: 30%;
-width: 30%;
-} 
