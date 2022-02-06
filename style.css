@@ -1,12 +1,22 @@
-.container {
+body {
     display: flex;
-    flex-wrap: no-wrap;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+img {
     max-width: 100%;
     height: auto;
     width: auto;
 }
 
-img {
+.container {
+    display: flex;
+    flex-wrap: no-wrap;
     max-width: 100%;
     height: auto;
     width: auto;
