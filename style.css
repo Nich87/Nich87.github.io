@@ -2,7 +2,6 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    overflow: hidden;
 }
 
 main {
@@ -13,6 +12,10 @@ img {
     max-width: 100%;
     height: auto;
     width: auto;
+}
+
+.wrap-content {
+    overflow: hidden;
 }
 
 .container {
