@@ -1,17 +1,3 @@
-.main-content {
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.sub-content {
-    margin-left: auto;
-}
-
-article {
-    display: flex;
-}
-
 body:before {
     content: "";
     display: block;
@@ -27,6 +13,18 @@ body:before {
     background-position: center center;
 }
 
-.presence-card {
+article {
     display: flex;
 }
+
+.main-content {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sub-content {
+    margin-left: auto;
+}
+
+
