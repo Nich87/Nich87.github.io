@@ -1,6 +1,7 @@
 .main-content {
+    margin-top: 10px;
+    margin-left: 20px;
     margin-right: 20px;
-    width: 100%;
 }
 
 .sub-content {
@@ -8,5 +9,24 @@
 }
 
 article {
-  display:flex;
+    display: flex;
+}
+
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(18, 204, 179, 0.411), rgba(20, 90, 78, 0.342)),
+        url(Assets/background/22504572.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.presence-card {
+    display: flex;
 }
