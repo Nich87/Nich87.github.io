@@ -5,19 +5,21 @@ document.addEventListener('DOMContentLoaded', function () {
         direction: 'left'
     });
 });
-const copyURL = () => {
-    navigator.clipboard.writeText("https://nich87.github.io/");
+const copyCB = (str) => {
+    navigator.clipboard.writeText(str);
     M.toast({
-        html: 'URLをコピーしました！',
+        html: 'クリップボードにコピーしました！',
         classes: 'rounded'
     });
 };
 
 const content_copy = document.getElementById('content-copy');
 const pagetop = document.getElementById('pagetop');
+const d_discord = document.getElementById('dropdown-discord');
 
 
-content_copy.addEventListener('click', () => copyURL());
+content_copy.addEventListener('click', () => copyCB('https://nich87.github.io/'));
+d_discord.addEventListener('click', () => copyCB('あると#3037'));
 pagetop.addEventListener('click', () => {
     window.scrollTo({
         top: 0,

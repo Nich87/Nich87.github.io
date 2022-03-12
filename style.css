@@ -28,3 +28,6 @@ article {
 }
 
 
+@media screen and (max-width:480px){
+    .sub-content {display: none;}
+}
