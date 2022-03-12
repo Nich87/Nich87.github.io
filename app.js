@@ -27,3 +27,10 @@ pagetop.addEventListener('click', () => {
     });
 });
 
+window.onload = () => {
+    const loader = document.getElementById('loader');
+    loader.classList.add('loaded');
+    const wrapper = document.getElementById('wrap-win');
+    wrapper.style.visibility = 'visible';
+}
+

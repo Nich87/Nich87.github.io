@@ -14,138 +14,147 @@
 <link rel="icon" href="Assets/favicon.png" />
 
 <body>
-    <!--Navigation-->
-    <header>
-        <nav class="red" style="padding:0px 10px;">
-            <div class="nav-wrapper">
-                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <a href="#" class="brand-logo center">Arto Zone</a>
-                <ul class="right hide-on-med-and-down ">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a class="dropdown-trigger" data-target='dropdown-contacts'>Contact</a></li>
-                    <ul id='dropdown-contacts' class='dropdown-content'>
-                        <li><a href="#!">Twitter</a></li>
-                        <li><a href="#!">LINE</a></li>
-                        <li><a href="#!">Mail</a></li>
-                        <li><a id="dropdown-discord">Discord</a></li>
+    <div class="spinner" id="loader">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+    <div class="wrap-window" id="wrap-win">
+        <!--Navigation-->
+        <header>
+            <nav class="red" style="padding:0px 10px;">
+                <div class="nav-wrapper">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <a href="#" class="brand-logo center">Arto Zone</a>
+                    <ul class="right hide-on-med-and-down ">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a class="dropdown-trigger" data-target='dropdown-contacts'>Contact</a></li>
+                        <ul id='dropdown-contacts' class='dropdown-content'>
+                            <li><a href="https://twitter.com/const_root">Twitter</a></li>
+                            <li><a href="https://line.me/ti/p/wSv-B11z5a">LINE</a></li>
+                            <li><a href="mailto:arto@via.tokyo.jp">Mail</a></li>
+                            <li><a id="dropdown-discord">Discord</a></li>
+                        </ul>
                     </ul>
-                </ul>
-            </div>
-        </nav>
-        <ul id="slide-out" class="sidenav">
-            <li>
-                <div class="user-view">
-                    <div class="background">
-                        <img src="Assets/background/22500899.jpg">
-                    </div>
-                    <a href="#user"><img class="circle" src="Assets/icon/me.png"></a>
-                    <a href="#name"><span class="black-text name">Arto(Nich87)</span></a>
-                    <a href="mailto:arto@via.tokyo.jp"><span class="black-text email">arto@via.tokyo.jp</span></a>
                 </div>
-            </li>
-            <li><a href="#!"><i class="material-icons">home</i>HOME</a></li>
-            <li><a href="#!"><i class="material-icons">business_center</i>Service</a></li>
-            <li><a href="#!"><i class="material-icons">info</i>About</a></li>
-            <li><a href="#!"><i class="material-icons">email</i>Contact</a></li>
-            <li>
-                <div class="divider"></div>
-            </li>
-            <li><a class="subheader">Third Links</a></li>
-            <li><a class="waves-effect" href="https://materializecss.com/">Materialize</a></li>
-            <li><a class="waves-effect" href="https://momochy.com/">momochyのおうち</a></li>
-            <li><a class="waves-effect" href="http://flat-icon-design.com/">FLAT ICON DESIGN</a></li>
-            <li><a class="waves-effect" href="https://www.ac-illust.com/">illust AC</a></li>
-        </ul>
-    </header>
-    <!--Navigation-->
-    <article>
-        <div class="main-content">
-            <div class="presence-list">
-                <ul class="collection">
-                    <li class="collection-item avatar">
-                        <img src="Assets/icon/me.png" class="circle">
-                        <span class="title">My Profile</span>
-                        <p>Name:あると(arto) <br>
-                            I enjoy Listening to Music and Reading books! <br>
-                            My favorite artists are Yakushimaru Etsuko and Kotringo. <br>
-                            My favorite movie is In This Corner of the World. <br>
-                            I also like animated films, Vocaloid, etc. <br>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="card blue-grey darken-1">
-                        <div class="card-content white-text">
-                            <span class="card-title">My Projects</span>
+            </nav>
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="Assets/background/22500899.jpg">
+                        </div>
+                        <a href="#user"><img class="circle" src="Assets/icon/me.png"></a>
+                        <a href="#name"><span class="black-text name">Arto(Nich87)</span></a>
+                        <a href="mailto:arto@via.tokyo.jp"><span class="black-text email">arto@via.tokyo.jp</span></a>
+                    </div>
+                </li>
+                <li><a href="#!"><i class="material-icons">home</i>HOME</a></li>
+                <li><a href="#!"><i class="material-icons">business_center</i>Service</a></li>
+                <li><a href="#!"><i class="material-icons">info</i>About</a></li>
+                <li><a href="#!"><i class="material-icons">email</i>Contact</a></li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li><a class="subheader">Third Links</a></li>
+                <li><a class="waves-effect" href="https://materializecss.com/">Materialize</a></li>
+                <li><a class="waves-effect" href="https://momochy.com/">momochyのおうち</a></li>
+                <li><a class="waves-effect" href="http://flat-icon-design.com/">FLAT ICON DESIGN</a></li>
+                <li><a class="waves-effect" href="https://www.ac-illust.com/">illust AC</a></li>
+            </ul>
+        </header>
+        <!--Navigation-->
+        <article>
+            <div class="main-content">
+                <div class="presence-list">
+                    <ul class="collection">
+                        <li class="collection-item avatar">
+                            <img src="Assets/icon/me.png" class="circle">
+                            <span class="title">My Profile</span>
+                            <p>Name:あると(arto) <br>
+                                I enjoy Listening to Music and Reading books! <br>
+                                My favorite artists are Yakushimaru Etsuko and Kotringo. <br>
+                                My favorite movie is In This Corner of the World. <br>
+                                I also like animated films, Vocaloid, etc. <br>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">My Projects</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="Projects">
-                <div class="col s12 m7">
-                    <div class="card horizontal">
-                        <div class="card-image">
-                            <img src="Assets/card-image/Electunes.png">
-                        </div>
-                        <div class="card-stacked">
-                            <div class="card-content">
-                                <h4>Electunes</h4>
-                                <p><b>Very simple music player.</b></p>
-                                <p>I named it Electunes because it is developed in Electron.</p><br>
-                                <p><b>Supported Formats</b><br>mp3,wav,flac,ogg,acc,m4a,wma,alac,webm</p>
+                <div class="Projects">
+                    <div class="col s12 m7">
+                        <div class="card horizontal">
+                            <div class="card-image">
+                                <img src="Assets/card-image/Electunes.png">
                             </div>
-                            <div class="card-action">
-                                <a href="https://github.com/Nich87/Electron-MusicPlayer">Github</a>
-                                <a href="https://github.com/Nich87/Electron-MusicPlayer/releases/download/rc2/Electunes.Setup.1.0.0-rc2.exe">Download</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m7">
-                    <div class="card horizontal">
-                        <div class="card-image">
-                            <img src="Assets/card-image/Builder.png">
-                        </div>
-                        <div class="card-stacked">
-                            <div class="card-content">
-                                <h4>Discord Button Builder</h4>
-                                <p><b>Useful button creation tools</b></p>
-                                <p>This is an npm module for creating buttons for Discord.js that can be written <span
-                                        style="border-bottom: solid 1px red;">easily and concisely.</span></p><br>
-                                <p>Minimum requirement: Discord.js v13 or higher</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="https://github.com/Nich87/discord-button-builder">Github</a>
-                                <a href="https://www.npmjs.com/package/discord-button-builder">NPM</a>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <h4>Electunes</h4>
+                                    <p><b>Very simple music player.</b></p>
+                                    <p>I named it Electunes because it is developed in Electron.</p><br>
+                                    <p><b>Supported Formats</b></p>
+                                    <p>mp3,wav,flac,ogg,acc,m4a ...etc</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="https://github.com/Nich87/Electron-MusicPlayer">Github</a>
+                                    <a
+                                        href="https://github.com/Nich87/Electron-MusicPlayer/releases/download/rc2/Electunes.Setup.1.0.0-rc2.exe">Download</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div><!-- /.Projects/ -->
-        </div><!-- /.main-content/ -->
+                    <div class="col s12 m7">
+                        <div class="card horizontal">
+                            <div class="card-image">
+                                <img src="Assets/card-image/Builder.png">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <h4>Discord Button Builder</h4>
+                                    <p><b>Useful button creation tools</b></p>
+                                    <p>This is an npm module for creating buttons for Discord.js that can be written
+                                        <span style="border-bottom: solid 1px red;">easily and concisely.</span></p><br>
+                                    <p>Minimum requirement: Discord.js v13 or higher</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="https://github.com/Nich87/discord-button-builder">Github</a>
+                                    <a href="https://www.npmjs.com/package/discord-button-builder">NPM</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.Projects/ -->
+            </div><!-- /.main-content/ -->
 
-        <div class="sub-content">
-            <a class="twitter-timeline" data-width="500" data-height="800" data-theme="dark"
-                href="https://twitter.com/const_root?ref_src=twsrc%5Etfw">Tweets by const_root</a>
-            <div class="fixed-action-btn">
-                <a class="btn-floating btn-large red">
-                    <i class="large material-icons">mode_edit</i>
-                </a>
-                <ul>
-                    <li><a class="btn-floating green"><i class="material-icons" id="pagetop">publish</i></a></li>
-                    <li><a class="btn-floating blue"><i class="material-icons" id="content-copy">link</i></a></li>
-                </ul>
+            <div class="sub-content">
+                <a class="twitter-timeline" data-width="500" data-height="800" data-theme="dark"
+                    href="https://twitter.com/const_root?ref_src=twsrc%5Etfw">Tweets by const_root</a>
             </div>
+        </article>
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating green"><i class="material-icons" id="pagetop">publish</i></a></li>
+                <li><a class="btn-floating blue"><i class="material-icons" id="content-copy">link</i></a></li>
+            </ul>
         </div>
-    </article>
-    <!--Scripts-->
+        <!--Scripts-->
     <script type="text/javascript" src="app.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
 </body>
 
 </html>
